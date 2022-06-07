@@ -318,6 +318,9 @@ p.about{
     .logo{
         margin-bottom: 20px;
     }
+      .top {
+      flex-direction: column;
+  }
     .title-section{
         background-position: 120% 120%;
     }
@@ -328,6 +331,9 @@ p.about{
         margin-bottom: 10px;
     }
   .contacts{
+      flex-direction: column;
+  }
+      .top {
       flex-direction: column;
   }
   .icon{

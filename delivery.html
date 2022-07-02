@@ -52,5 +52,37 @@
         <p>2022 БЖУШКА - ВИРОБНИК МЕДУ В УКРАЇНІ. Усі права захищені.</p>
     </footer>
 </body>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'product__element',
+				buttonAddToBasket: 'product__add-to-cart-button',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'smart-basket__min',
+				countryCode: '+38',
+				smartBasketCurrency: '₴',
+				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://artstranger.ru/privacy.html',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
 
 </html>
